@@ -1,0 +1,14 @@
+#Customise messages here.
+#Use § for colour codes.
+Command:
+  must_be_player: "§4Error: §cThis command can only be run by a player!"
+  no_permission: "§4Error: §cYou don't have permission to do that!"
+  missing_argument: "§4Error: §cMissing/incorrect argument(s), Usage is:\n
+                    §7/ccframe reload §c- reload the config\n
+                    §7/ccframe set §8<§7command without /§8>§7 §c- set a frame command
+                    §7/ccframe remove §c- remove a frame command\n"
+  click_to_add: "§9Please click the frame to set the command to."
+  click_to_remove: "§9Please click the frame to remove the command from."
+  reloaded: "§9ccFrameClick config reloaded."
+  frame_removed: "§9This frame no longer runs a command"
+  frame_added: "§9New Frame command set to §7/{command}"

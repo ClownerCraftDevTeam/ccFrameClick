@@ -1,0 +1,10 @@
+name: ccFrameClick
+author: TheClowner
+version: ${project.version}
+main: net.clownercraft.ccframeclick.ccFrameClickMain
+commands:
+  ccframe:
+    description: Command for setting frame commands
+    permission: ccframeclick.admin
+    permission-message: You do not have access to that command.
+    usage: /ccframe <set|remove|reload> [command without /]
