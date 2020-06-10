@@ -63,9 +63,13 @@ public class ccFrameCommand implements CommandExecutor, TabCompleter {
             case "set":
                 //set a command to a frame
                 StringBuilder frameCommand = new StringBuilder();
-
-                for (String arg : args) {
-                    frameCommand.append(arg).append(" ");
+                if (args.length<2) {
+                    //check if a command
+                    commandSender.sendMessage(Config.missing_argument);
+                    return true;
+                }
+                for (int i=1;i<args.length;i++) {
+                    frameCommand.append(args[i]).append(" ");
                 }
                 commandSender.sendMessage(Config.click_to_add);
 
